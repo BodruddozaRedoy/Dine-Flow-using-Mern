@@ -1,5 +1,5 @@
 # Dine Flow
-Here user can order their preferred food. And manage their order. Then user also can add food update their own added food and also delete that food.
+Here user can order their preferred food. And manage their order. Then user also can add, update and delete their own added food and also delete that food.
 
 ## Live link: https://dine-flow-9cef9.web.app
 
