@@ -7,6 +7,7 @@ import { authStore } from '../store/authStore';
 import moment from "moment";
 import toast from 'react-hot-toast';
 import { Helmet } from 'react-helmet';
+import Spinner from '../components/Spinner';
 
 
 const MyOrdersPage = () => {
@@ -73,7 +74,8 @@ const MyOrdersPage = () => {
                             <th>Action</th>
                         </tr>
                         </thead>
-                        <tbody>
+                        <div className='flex items-center justify-center'>{orders.length === 0 && <Spinner/>}</div>
+                        <tbody className=''>
                         {/* row 1 */}
                         {
                             orders.map((food, i) => (

@@ -17,6 +17,8 @@ const AllFoodsPage = () => {
     const [search, setSearch] = useState('');
     const [searchResults, setSearchResults] = useState([]);
     const [loading, setLoading] = useState(false);
+    const [allData, setAllData] = useState(foods)
+    const [order, setOrder] = useState("")
 
     // Debounced search effect
     useEffect(() => {
@@ -58,6 +60,14 @@ const AllFoodsPage = () => {
     useEffect(() => {
         allFoods();
     }, []);
+
+    const sorted = (e) => {
+        const selected = e.target.value
+        setOrder(selected)
+        axiosInstance.post(`/api/sorted-data?sortBy=price&order=${selected}`)
+        .then(res => setAllData(res.data)
+        )
+    }
       
     
     
@@ -81,13 +91,18 @@ const AllFoodsPage = () => {
                         />
                         {/* You could also use this button if you prefer a manual search trigger */}
                         {/* <div onClick={handleSearch}><MainBtn text={"Search"} /></div> */}
+                    <select name="sort" id="" onChange={sorted} className='bg-primary border-none py-3 px-5 text-white rounded-lg'>
+                        <option className='bg-white text-primary' value="" disabled selected>Sort by</option>
+                        <option className='bg-white text-primary' value="dsc">Sort by Descending</option>
+                        <option className='bg-white text-primary' value="asc">Sort by Ascending</option>
+                    </select>
                     </div>
                 </div>
                 <hr />
-                <div className='grid lg:grid-cols-4 grid-cols-1 mt-5 gap-5'>
+                <div className={`h-screen grid lg:grid-cols-4 grid-cols-1 mt-5 gap-5`}>
                     {loading && <p>Loading...</p>}
                     {/* Display either search results or all foods */}
-                    {(searchResults.length > 0 ? searchResults : foods)?.map((food) => (
+                    {(searchResults.length > 0 ? searchResults : allData)?.map((food) => (
                         <AllFoodCard key={food._id} food={food} highlightText={highlightText} searchTerm={search}/> // Ensure each food has a unique key
                     ))}
                 </div>

@@ -8,6 +8,7 @@ import { category } from '../components/CategorySection/CategorySection';
 import { foodStore } from '../store/foodStore';
 import toast from 'react-hot-toast';
 import { Helmet } from 'react-helmet';
+import Spinner from '../components/Spinner';
 
 
 const MyFoodsPage = () => {
@@ -122,7 +123,8 @@ const MyFoodsPage = () => {
                   <th>Action</th>
                 </tr>
               </thead>
-              <tbody>
+                <div className='felx justify-center items-center'>{foods.length === 0 && <Spinner/>}</div>
+              <tbody className=''>
                 {/* row 1 */}
                 {foods.map((food, i) => (
                   <tr>
