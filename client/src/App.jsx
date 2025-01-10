@@ -24,6 +24,7 @@ import { onAuthStateChanged } from 'firebase/auth'
 import { auth } from '../firebase.init'
 import ErrorPage from './pages/ErrorPage'
 import { axiosInstance } from './utils/axios'
+import AboutPage from './pages/AboutPage'
 
 
 function App() {
@@ -68,12 +69,13 @@ function App() {
     <div className='font-poppins dark:bg-gray-700'>
       {
         isLoading 
-        ?<Spinner/>
+      ?<Spinner/>
         :<Routes>
         <Route path='/' element={<MainLayout/>}>
           <Route path='/' element={<HomePage/>}/>
           <Route path='/all-foods' element={<AllFoodsPage/>}/>
           <Route path='/gallery' element={<GalleryPage/>}/>
+          <Route path='/about' element={<AboutPage/>}/>
           <Route path='/my-foods' element={<PrivateRoute><MyFoodsPage/></PrivateRoute>}/>
           <Route path='/add-food' element={<PrivateRoute><AddFoodPage/></PrivateRoute>}/>
           <Route path='/my-orders' element={<PrivateRoute><MyOrdersPage/></PrivateRoute>}/>

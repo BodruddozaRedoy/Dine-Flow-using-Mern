@@ -21,6 +21,10 @@ const navList = [
     title: "Gallery",
     link: "/gallery",
   },
+  {
+    title: "About Us",
+    link: "/about",
+  },
 ];
 
 const Navbar = () => {
