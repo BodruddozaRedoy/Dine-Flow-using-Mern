@@ -1,7 +1,34 @@
-import React from "react";
+import React, { useState } from "react";
 import { Helmet } from "react-helmet";
+import emailjs from "emailjs-com";
+
 
 const AboutPage = () => {
+    const [email, setEmail] = useState("")
+    
+    
+    const sendEmail = (e) => {
+        e.preventDefault()
+        
+            emailjs.send(
+        "service_6px9w19", // Replace with your EmailJS service ID
+        "template_53az5fr", // Replace with your EmailJS template ID
+        email, // Form data to send
+        "VPTv5xwxrK_8JIZuj" // Replace with your EmailJS public key
+      )
+      .then(
+        (response) => {
+          console.log("Email sent successfully!", response.status, response.text);
+          alert("Email sent successfully!");
+        },
+        (error) => {
+          console.error("Error sending email:", error);
+          alert("Failed to send email. Please try again.");
+        }
+      )
+    
+        
+    }
   return (
     <div>
       <Helmet>
@@ -35,9 +62,9 @@ const AboutPage = () => {
       </p>
     </div>
     <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
-      <form className="p-10 flex">
+      <form className="p-10 flex" onSubmit={"sendEmail"}>
         <div className="form-control">
-          <input type="email" placeholder="Type your email here" className="input input-bordered" required />
+          <input  type="email" name="email" placeholder="Type your email here" className="input input-bordered" required onChange={(e) => setEmail(e.target.value)}/>
         </div>
         <div className="form-control ml-6">
           <button className="btn text-white bg-primary">Send</button>
