@@ -59,7 +59,7 @@ Ensure you have the following installed:
 ### **Steps to Run Locally**  
 ```sh
 # Clone the repository
-git clone https://github.com/your-repo/dine-flow.git
+git clone https://github.com/BodruddozaRedoy/Dine-Flow-using-Mern.git
 cd dine-flow
 
 # Install dependencies
