@@ -62,12 +62,12 @@ const AboutPage = () => {
       </p>
     </div>
     <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
-      <form className="p-10 flex" onSubmit={"sendEmail"}>
+      <form className="p-10 flex flex-col gap-5 md:gap-0 md:flex-row" onSubmit={"sendEmail"}>
         <div className="form-control">
           <input  type="email" name="email" placeholder="Type your email here" className="input input-bordered" required onChange={(e) => setEmail(e.target.value)}/>
         </div>
-        <div className="form-control ml-6">
-          <button className="btn text-white bg-primary">Send</button>
+        <div className="form-control md:ml-6">
+          <button className="btn text-white bg-primary w-full">Send</button>
         </div>
       </form>
     </div>

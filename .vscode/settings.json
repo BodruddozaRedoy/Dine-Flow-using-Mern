@@ -1,6 +1,4 @@
 {
-    "cSpell.words": [
-        "Bodruddoza",
-        "Redoy"
-    ]
+  "cSpell.words": ["Bodruddoza", "Redoy"],
+  "postman.settings.dotenv-detection-notification-visibility": false
 }

@@ -79,7 +79,7 @@ const LoginPage = () => {
                 <title>Login | Dine Flow</title>
             </Helmet>
         <div className="max-w-screen-xl bg-white border shadow sm:rounded-lg flex justify-center flex-1">
-          <div className="flex-1 bg-green-400 text-center hidden lg:flex">
+          <div className="flex-1 bg-primary text-center hidden lg:flex">
             <div
               className="m-12 xl:m-16 w-full bg-contain bg-center bg-no-repeat"
               style={{
@@ -90,7 +90,7 @@ const LoginPage = () => {
           <div className="lg:w-1/2 xl:w-5/12 p-6 sm:p-12">
             <div className=" flex flex-col items-center">
               <div className="text-center">
-                <h1 className="text-2xl xl:text-4xl font-extrabold text-green-400">
+                <h1 className="text-2xl xl:text-4xl font-extrabold text-primary">
                   Login
                 </h1>
                 <p className="text-[12px] text-gray-500">
@@ -121,18 +121,18 @@ const LoginPage = () => {
                 }
                 </div>
                 </div>
-                  <Link onClick={handelEmail} className='underline text-xs cursor-pointer hover:text-green-400 text-start'>Forget password?</Link>
-                  <button className="mt-5 tracking-wide font-semibold bg-green-400 text-gray-100 w-full py-4 rounded-lg hover:bg-green-300 transition-all duration-300 ease-in-out flex items-center justify-center focus:shadow-outline focus:outline-none">
+                  <Link onClick={handelEmail} className='underline text-xs cursor-pointer hover:text-primary text-start'>Forget password?</Link>
+                  <button className="mt-5 tracking-wide font-semibold bg-primary text-gray-100 w-full py-4 rounded-lg hover:bg-green-300 transition-all duration-300 ease-in-out flex items-center justify-center focus:shadow-outline focus:outline-none">
                     <span className="ml-3">Login</span>
                   </button>
                   <p className="mt-6 text-xs text-gray-600 text-center">
                     Don't have an account?{" "}
                     <Link to={'/register'}>
-                      <span className="text-green-400 font-semibold">Register</span>
+                      <span className="text-primary font-semibold">Register</span>
                     </Link>
                   </p>
                   <hr />
-                  <div onClick={handleGmailLogin} className='btn bg-green-400 text-white'><FaGoogle/> Google</div>
+                  <div onClick={handleGmailLogin} className='btn bg-primary text-white'><FaGoogle/> Google</div>
                 </form>
               </div>
             </div>

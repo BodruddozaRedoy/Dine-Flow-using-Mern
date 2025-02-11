@@ -108,7 +108,7 @@ const MyFoodsPage = () => {
       <div>
             <Helmet title='My Foods | Dine Flow'/>
         <PageTitle pageTitle={"My Foods"} />
-        <div className="md:m-10 p-10 rounded-3xl bg-white dark:bg-slate-400">
+        <div className="md:m-10 p-5 md:p-10 rounded-3xl bg-white dark:bg-slate-400">
           <h1 className='text-xl md:text-3xl'>My Foods</h1>
           <div className="overflow-x-auto">
             <table className="table">

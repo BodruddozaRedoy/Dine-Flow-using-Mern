@@ -54,13 +54,13 @@ const Navbar = () => {
   };
 
   return (
-    <div className="flex items-center justify-between py-5 bg-white dark:bg-gray-800 md:px-20 px-5">
+    <div className="flex items-center justify-between py-5 bg-white dark:bg-gray-800 md:px-10 px-5">
       {/* Nav Start */}
-      <div>
+      <Link to={"/"}>
         <h1 className="text-2xl font-bold text-primary dark:text-white">
           Dine Flow
         </h1>
-      </div>
+      </Link>
 
       {/* Nav Middle */}
       <div className="hidden lg:flex relative">

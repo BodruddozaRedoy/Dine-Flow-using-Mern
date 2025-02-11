@@ -11,6 +11,7 @@ import { authStore } from '../store/authStore';
 import { onAuthStateChanged } from 'firebase/auth';
 import { auth } from '../../firebase.init';
 import { Helmet } from 'react-helmet';
+import CardSkeleton from '../components/CardSkeleton';
 
 const AllFoodsPage = () => {
     const { foods, allFoods } = useStore(foodStore);
@@ -77,10 +78,10 @@ const AllFoodsPage = () => {
         <div>
             <Helmet title='All Foods | Dine Flow'/>
             <PageTitle pageTitle={"All Foods"} />
-            <div className='md:m-10 bg-white dark:bg-slate-400 rounded-xl p-10'>
-                <div className='flex items-center justify-between mb-5'>
-                    <h1 className='font-serif text-xl md:text-3xl'>All Foods</h1>
-                    <div className='flex items-center gap-3'>
+            <div className='md:m-10 bg-white dark:bg-slate-400 rounded-xl p-5 md:p-10'>
+                <div className='flex flex-col md:flex-row items-center justify-between mb-5'>
+                    <h1 className='font-serif font-bold text-2xl mb-4 md:mb-0 md:text-3xl'>All Foods</h1>
+                    <div className='flex  items-center gap-3'>
                         <input
                             onChange={(e) => setSearch(e.target.value)}
                             value={search}
@@ -91,7 +92,7 @@ const AllFoodsPage = () => {
                         />
                         {/* You could also use this button if you prefer a manual search trigger */}
                         {/* <div onClick={handleSearch}><MainBtn text={"Search"} /></div> */}
-                    <select name="sort" id="" onChange={sorted} className='bg-primary border-none py-3 px-5 text-white rounded-lg'>
+                    <select name="sort" id="" onChange={sorted} className='bg-primary border-none py-3 w-1/3 px-3 md:px-5 text-white rounded-lg'>
                         <option className='bg-white text-primary' value="" disabled selected>Sort by</option>
                         <option className='bg-white text-primary' value="dsc">Sort by Descending</option>
                         <option className='bg-white text-primary' value="asc">Sort by Ascending</option>
@@ -99,13 +100,13 @@ const AllFoodsPage = () => {
                     </div>
                 </div>
                 <hr />
-                <div className={`h-screen grid lg:grid-cols-4 grid-cols-1 mt-5 gap-5`}>
-                    {loading && <p>Loading...</p>}
-                    {/* Display either search results or all foods */}
-                    {(searchResults.length > 0 ? searchResults : allData)?.map((food) => (
+                
+                    {loading ? <CardSkeleton/> : <div className=' grid lg:grid-cols-4 grid-cols-1 mt-5 gap-5'> {(searchResults.length > 0 ? searchResults : allData)?.map((food) => (
                         <AllFoodCard key={food._id} food={food} highlightText={highlightText} searchTerm={search}/> // Ensure each food has a unique key
-                    ))}
-                </div>
+                    )) }</div>}
+                    {/* Display either search results or all foods */}
+                    {/* {} */}
+                
             </div>
         </div>
     );

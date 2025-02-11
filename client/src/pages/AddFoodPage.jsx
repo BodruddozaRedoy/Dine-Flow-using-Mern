@@ -56,7 +56,7 @@ const AddFoodPage = () => {
     }
 
     return (
-        <div className='md:m-10 m-2 bg-white dark:bg-slate-400 p-10 rounded-3xl'>
+        <div className='md:m-10 m-5 bg-white dark:bg-slate-400 p-5 md:p-10 rounded-3xl'>
             <Helmet title='Add Foods | Dine Flow'/>
             <form onSubmit={handleSubmit} className='flex flex-col md:grid md:grid-cols-2 gap-5' action="">
                 <div className=''>

@@ -9,7 +9,7 @@ const FoodCard = ({food}) => {
       <div key={_id} className="bg-white rounded-3xl shadow-lg p-5 group dark:bg-slate-400 ">
         <div className='h-[250px] rounded-3xl overflow-hidden object-center mb-5 relative'>
         <img className="w-full h-full object-cover " src={image} alt="" />
-        <p className='text-xs bg-primary py-1 px-2 rounded-full text-white absolute top-3 left-[270px]'>Purchased: {purchased}</p>
+        <p className='text-xs bg-primary py-1 px-2 rounded-full text-white absolute top-3 left-[200px] md:left-[270px]'>Purchased: {purchased}</p>
         </div>
         <p className="font-semibold">{productName}</p>
         <ReactStars

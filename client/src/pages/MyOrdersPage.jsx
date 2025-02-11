@@ -59,7 +59,7 @@ const MyOrdersPage = () => {
         <div>
             <Helmet title='My Order | Dine Flow'/>
             <PageTitle pageTitle={"My Orders"}/>
-            <div className='md:m-10 m-2 rounded-3xl bg-white dark:bg-slate-400 p-10'>
+            <div className='md:m-10 mt-5 md:mt-0 rounded-3xl bg-white dark:bg-slate-400 p-5 md:p-10'>
                 <h1>Orders</h1>
                 <div className="overflow-x-auto">
                     <table className="table">

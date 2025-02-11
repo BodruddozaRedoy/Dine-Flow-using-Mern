@@ -115,7 +115,7 @@ console.log(user);
                 <title>Register | Dine Flow</title>
             </Helmet>
       <div className="max-w-screen-xl bg-white border shadow sm:rounded-lg flex justify-center flex-1">
-        <div className="flex-1 bg-green-400 text-center hidden lg:flex">
+        <div className="flex-1 bg-primary text-center hidden lg:flex">
           <div
             className="m-12 xl:m-16 w-full bg-contain bg-center bg-no-repeat"
             style={{
@@ -126,7 +126,7 @@ console.log(user);
         <div className="lg:w-1/2 xl:w-5/12 p-6 sm:p-12">
           <div className=" flex flex-col items-center">
             <div className="text-center">
-              <h1 className="text-2xl xl:text-4xl font-extrabold text-green-400">
+              <h1 className="text-2xl xl:text-4xl font-extrabold text-primary">
                 Register
               </h1>
               <p className="text-[12px] text-gray-500">
@@ -171,7 +171,7 @@ console.log(user);
                 </div>
                 </div>
                 <p className='text-sm text-red-500'>{error}</p>
-                <button className="mt-5 tracking-wide font-semibold bg-green-400 text-gray-100 w-full py-4 rounded-lg hover:bg-green-300 transition-all duration-300 ease-in-out flex items-center justify-center focus:shadow-outline focus:outline-none">
+                <button className="mt-5 tracking-wide font-semibold bg-primary text-gray-100 w-full py-4 rounded-lg hover:bg-green-300 transition-all duration-300 ease-in-out flex items-center justify-center focus:shadow-outline focus:outline-none">
                   <svg
                     className="w-6 h-6 -ml-2"
                     fill="none"
@@ -189,11 +189,11 @@ console.log(user);
                 <p className="mt-6 text-xs text-gray-600 text-center">
                   Already have an account?{" "}
                   <Link to={'/login'}>
-                    <span className="text-green-400 font-semibold">Login</span>
+                    <span className="text-primary font-semibold">Login</span>
                   </Link>
                 </p>
                 <hr />
-                {/* <button onClick={handleGmailLogin} className='btn bg-green-400 text-white'><FaGoogle/> Google</button> */}
+                {/* <button onClick={handleGmailLogin} className='btn bg-primary text-white'><FaGoogle/> Google</button> */}
               </form>
             </div>
           </div>
