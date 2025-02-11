@@ -21,6 +21,12 @@ const AllFoodsPage = () => {
     const [allData, setAllData] = useState(foods)
     const [order, setOrder] = useState("")
 
+
+    // Fetch all foods
+    useEffect(() => {
+        allFoods();
+    }, []);
+    
     // Debounced search effect
     useEffect(() => {
         const debounceTimeout = setTimeout(() => {
@@ -57,10 +63,7 @@ const AllFoodsPage = () => {
         return text.replace(regex, (match) => `<span class="bg-primary">${match}</span>`); 
     };
 
-    // Fetch all foods
-    useEffect(() => {
-        allFoods();
-    }, []);
+    
 
     const sorted = (e) => {
         const selected = e.target.value
