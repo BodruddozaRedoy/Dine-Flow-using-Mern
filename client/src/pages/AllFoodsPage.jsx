@@ -20,7 +20,7 @@ const AllFoodsPage = () => {
     // Fetch all foods
     useEffect(() => {
         allFoods();
-    }, []);
+    }, [loading, allData]);
 
     // Debounced search effect
     useEffect(() => {
