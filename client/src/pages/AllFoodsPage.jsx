@@ -1,15 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import PageTitle from '../Layouts/PageTitle';
-import MainBtn from '../components/MainBtn';
 import { useStore } from 'zustand';
 import { foodStore } from '../store/foodStore';
-import FoodCard from '../components/AllFoodCard';
 import { axiosInstance } from '../utils/axios';
 import toast from 'react-hot-toast';
 import AllFoodCard from '../components/AllFoodCard';
-import { authStore } from '../store/authStore';
-import { onAuthStateChanged } from 'firebase/auth';
-import { auth } from '../../firebase.init';
 import { Helmet } from 'react-helmet';
 import CardSkeleton from '../components/CardSkeleton';
 
@@ -26,7 +21,7 @@ const AllFoodsPage = () => {
     useEffect(() => {
         allFoods();
     }, []);
-    
+
     // Debounced search effect
     useEffect(() => {
         const debounceTimeout = setTimeout(() => {
