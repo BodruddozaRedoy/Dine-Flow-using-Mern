@@ -101,7 +101,7 @@ const AllFoodsPage = () => {
                 </div>
                 <hr />
                 
-                    {allData?.length === 0  ? <CardSkeleton/> : <div className=' grid lg:grid-cols-4 grid-cols-1 mt-5 gap-5'> {(searchResults.length > 0 ? searchResults : allData)?.map((food) => (
+                    {allData?.length == 0  ? <CardSkeleton/> : <div className=' grid lg:grid-cols-4 grid-cols-1 mt-5 gap-5'> {(searchResults.length > 0 ? searchResults : allData)?.map((food) => (
                         <AllFoodCard key={food._id} food={food} highlightText={highlightText} searchTerm={search}/> // Ensure each food has a unique key
                     )) }</div>}
                     {/* Display either search results or all foods */}
