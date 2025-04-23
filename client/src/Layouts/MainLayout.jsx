@@ -6,7 +6,7 @@ import Headroom from "react-headroom";
 
 const MainLayout = () => {
     return (
-        <div className=''>
+        <div className='overflow-x-hidden'>
             <nav>
                 <Headroom>
                 <Navbar/>
