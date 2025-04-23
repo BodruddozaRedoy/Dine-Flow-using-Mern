@@ -50,7 +50,7 @@ export default function BlogSection() {
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-10 ">
-          <div className="rounded overflow-hidden shadow-lg flex flex-col bg-white">
+          <div className="rounded overflow-hidden shadow-lg flex flex-col bg-white dark:bg-slate-400">
             <a href="#"></a>
             <div className="relative">
               <a href="#">
@@ -79,7 +79,7 @@ export default function BlogSection() {
                 industry.
               </p>
             </div>
-            <div className="px-6 py-3 flex flex-row items-center justify-between bg-white">
+            <div className="px-6 py-3 flex flex-row items-center justify-between bg-white dark:bg-slate-400">
               <span
                 href="#"
                 className="py-1 text-xs font-regular text-gray-900 mr-1 flex flex-row items-center"
@@ -128,7 +128,7 @@ export default function BlogSection() {
             </div>
           </div>
 
-          <div className="rounded overflow-hidden shadow-lg flex flex-col bg-white">
+          <div className="rounded overflow-hidden shadow-lg flex flex-col bg-white dark:bg-slate-400">
             <a href="#"></a>
             <div className="relative">
               <a href="#">
@@ -157,7 +157,7 @@ export default function BlogSection() {
                 industry.
               </p>
             </div>
-            <div className="px-6 py-3 flex flex-row items-center justify-between bg-white">
+            <div className="px-6 py-3 flex flex-row items-center justify-between bg-white dark:bg-slate-400">
               <span
                 href="#"
                 className="py-1 text-xs font-regular text-gray-900 mr-1 flex flex-row items-center"
@@ -206,7 +206,7 @@ export default function BlogSection() {
             </div>
           </div>
 
-          <div className="rounded overflow-hidden shadow-lg flex flex-col bg-white">
+          <div className="rounded overflow-hidden shadow-lg flex flex-col bg-white dark:bg-slate-400">
             <a href="#"></a>
             <div className="relative">
               <a href="#">
@@ -226,7 +226,7 @@ export default function BlogSection() {
             <div className="px-6 py-4 mb-auto">
               <a
                 href="#"
-                className="font-medium text-lg inline-block hover:text-primary transition duration-500 ease-in-out inline-block mb-2"
+                className="font-medium text-lg inline-block hover:text-primary transition duration-500 ease-in-out  mb-2"
               >
                 Why to eat salad?
               </a>
@@ -235,7 +235,7 @@ export default function BlogSection() {
                 industry.
               </p>
             </div>
-            <div className="px-6 py-3 flex flex-row items-center justify-between bg-white">
+            <div className="px-6 py-3 flex flex-row items-center justify-between bg-white dark:bg-slate-400">
               <span
                 href="#"
                 className="py-1 text-xs font-regular text-gray-900 mr-1 flex flex-row items-center"
@@ -284,7 +284,7 @@ export default function BlogSection() {
             </div>
           </div>
 
-          <div className="rounded overflow-hidden shadow-lg flex flex-col bg-white">
+          <div className="rounded overflow-hidden shadow-lg flex flex-col bg-white dark:bg-slate-400">
             <a href="#"></a>
             <div className="relative">
               <a href="#">
@@ -304,7 +304,7 @@ export default function BlogSection() {
             <div className="px-6 py-4 mb-auto">
               <a
                 href="#"
-                className="font-medium text-lg inline-block hover:text-primary transition duration-500 ease-in-out inline-block mb-2"
+                className="font-medium text-lg inline-block hover:text-primary transition duration-500 ease-in-out  mb-2"
               >
                 Why to eat salad?
               </a>
@@ -313,7 +313,7 @@ export default function BlogSection() {
                 industry.
               </p>
             </div>
-            <div className="px-6 py-3 flex flex-row items-center justify-between bg-white">
+            <div className="px-6 py-3 flex flex-row items-center justify-between bg-white dark:bg-slate-400">
               <span
                 href="#"
                 className="py-1 text-xs font-regular text-gray-900 mr-1 flex flex-row items-center"
