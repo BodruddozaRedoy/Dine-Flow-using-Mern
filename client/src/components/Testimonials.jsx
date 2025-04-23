@@ -9,7 +9,7 @@ export default function Testimonials() {
             Testimonials
           </h1>
           <div className="flex flex-wrap w-full">
-            <div className="p-4 md:w-1/3 w-full ">
+            <div className="p-4 md:w-1/2 lg:w-1/3 w-full ">
               <div className="h-full bg-white p-8 rounded dark:bg-slate-400">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -38,7 +38,7 @@ export default function Testimonials() {
               </div>
             </div>
 
-            <div className="p-4 md:w-1/3 w-full">
+            <div className="p-4 md:w-1/2 lg:w-1/3 w-full">
               <div className="h-full bg-white dark:bg-slate-400 p-8 rounded">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -67,7 +67,7 @@ export default function Testimonials() {
               </div>
             </div>
 
-            <div className="p-4 md:w-1/3 w-full">
+            <div className="p-4 md:w-1/2 lg:w-1/3 w-full">
               <div className="h-full bg-white dark:bg-slate-400 p-8 rounded">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
