@@ -2,12 +2,11 @@ import React from "react";
 
 export default function BlogSection() {
   return (
-    <div>
-      <div className="w-full mx-auto p-5 sm:p-10 md:p-16">
+      <div className=" md:mx-10 mx-3">
         <div className="border-b mb-5 flex justify-between text-sm">
           <div className="text-primary flex items-center pb-2 pr-2 border-b-2 border-primary uppercase">
             <svg
-              className="h-6 mr-3"
+              className="h-6 mr-3 dark:text-white"
               version="1.1"
               id="Capa_1"
               xmlns="http://www.w3.org/2000/svg"
@@ -363,6 +362,5 @@ export default function BlogSection() {
           </div>
         </div>
       </div>
-    </div>
   );
 }
