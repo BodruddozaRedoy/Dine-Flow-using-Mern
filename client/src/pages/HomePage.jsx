@@ -6,6 +6,7 @@ import Service from '../components/Service';
 import {motion} from 'framer-motion'
 import Newsletter from '../components/Newsletter';
 import Testimonials from '../components/Testimonials';
+import BlogSection from '../components/BlogSection';
 
 
 const HomePage = () => {
@@ -16,6 +17,7 @@ const HomePage = () => {
             <TopFoodsSection/>
             <Service/>
             <Newsletter/>
+            <BlogSection/>
             <Testimonials/>
         </div>
     );
